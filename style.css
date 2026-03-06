@@ -8,9 +8,10 @@ font-family:Arial;
 }
 
 .calculadora{
-background:#850303;
+background:#333;
 padding:20px;
 border-radius:10px;
+width:260px;
 }
 
 #pantalla{
@@ -19,16 +20,38 @@ height:50px;
 font-size:22px;
 margin-bottom:10px;
 text-align:right;
+padding-right:10px;
 }
 
 .botones{
 display:grid;
-grid-template-columns:repeat(4,60px);
-gap:10px;
+grid-template-columns:repeat(4,1fr);
+gap:8px;
 }
 
 button{
-height:50px;
+height:45px;
 font-size:18px;
+border:none;
+background:#555;
+color:white;
 cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#777;
+}
+
+.igual{
+grid-column:span 2;
+background:#ff9500;
+}
+
+ul{
+color:white;
+margin-top:10px;
+font-size:14px;
+max-height:120px;
+overflow:auto;
 }
